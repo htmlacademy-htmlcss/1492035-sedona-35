@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Валентина Тонышева](https://up.htmlacademy.ru/htmlcss/35/user/1492035).
-* Наставник: [Валя Видяева] (https://htmlacademy.ru/profile/id189794).
+* Наставник: [Валя Видяева](https://htmlacademy.ru/profile/id189794).
 
 ---
 
