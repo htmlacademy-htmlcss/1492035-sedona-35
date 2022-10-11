@@ -21,6 +21,7 @@ body {
   color: #000000;
   background-color: #FFFFFF;
 }
+
 .page-header {
   background-color: #FFFFFF;
   color: #000000;
@@ -125,12 +126,81 @@ text-decoration: none;
 text-transform: none;
 }
 .advantages-description {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-  text-align: center;
-  color: #333333;
-  text-decoration: none;
-  text-transform: none;
+font-family: "PT Sans", sans-serif;
+font-size: 18px;
+line-height: 21px;
+font-weight: 400;
+text-align: center;
+color: #333333;
+text-decoration: none;
+text-transform: none;
+}
+.main-sentence-title {
+font-family: "PT Sans", sans-serif;
+font-size: 30px;
+line-height: 36px;
+font-weight: 700;
+text-align: center;
+color: #000000;
+text-decoration: none;
+text-transform: uppercase;
+}
+.main-sentence-description {
+font-family: "PT Sans", sans-serif;
+font-size: 22px;
+line-height: 26px;
+font-weight: 400;
+text-align: center;
+color: #333333;
+text-decoration: none;
+text-transform: none;
+}
+.button-search {
+font-size: 20px;
+line-height: 36px;
+font-family: "PT Sans", sans-serif;
+font-weight: 700;
+text-align: center;
+color: #FFFFFF;
+text-decoration: none;
+text-transform: uppercase;
+background-color: #756157;
+border-radius: 4px;
+padding: 8px, 50px, 8px, 50px;
+width: 376px;
+height: 52px;
+}
+.page-footer {
+background-image: url("../images/footer_images.jpg");
+background-repeat: no-repeat;
+width: 1200px;
+height: 415px;
+background-size: 100% auto;
+background-position: center;
+color: #FFFFFF;
+font-family: "PT Sans", sans-serif;
+text-transform: uppercase;
+text-decoration: none;
+}
+.page-footer-title {
+font-family: "PT Sans", sans-serif;
+font-size: 30px;
+line-height: 36px;
+font-weight: 700;
+text-align: center;
+}
+.page-footer-description {
+font-family: "PT Sans", sans-serif;
+font-size: 22px;
+line-height: 26px;
+text-transform: none;
+text-align: center;
+}
+.contact-phone {
+font-family: "PT Sans", sans-serif;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+font-weight: 400;
+color: #000000;
 }
