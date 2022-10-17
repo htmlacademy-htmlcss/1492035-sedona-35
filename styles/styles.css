@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+*, *::before {
+box-sizing: border-box;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -24,15 +28,19 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  width: 1200px;
+  box-shadow: 0, 0, 15px, rgb;
 }
 
 html {
   height: 100%;
+  min-width: 1200px;
 }
 
 .page-header {
   background-color: #FFFFFF;
   color: #000000;
+
 }
 
 .navigation {
@@ -44,11 +52,9 @@ html {
 .navigation-list {
   margin: 0;
   padding: 0;
-  width: 600;
 }
 
 .navigation-user {
-  max-width: 550px;
   margin-left: auto;
 }
 
@@ -101,10 +107,10 @@ html {
 }
 
 .main-image {
-  background-image: url("../images/index_background.jpg");
+  background-image: url("../images/index_background.jpg"), url("../images/vector_main_page.svg");
   background-color: #81B3D3;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center,  bottom;
   height: 485px;
   text-align: center;
 }
@@ -144,14 +150,19 @@ html {
   text-align: center;
   color:#333333;
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
   flex-wrap: wrap;
-  align-content: space-evenly;
+
 }
 
 .advantages-item {
-  width: 400px;
+  width: 100%;
+  display: flex;
+
+}
+
+.advantages-item-flex {
+ display: flex;
+ justify-content: flex-end;
 }
 
 .advantages-title-white {
@@ -214,6 +225,12 @@ html {
   text-decoration: none;
   text-transform: none;
 }
+
+.sentence {
+  height: 406px;
+  padding: 96px 304px;
+}
+
 .button-search {
   font-size: 20px;
   line-height: 36px;
@@ -228,17 +245,20 @@ html {
   padding: 8px, 50px, 8px, 50px;
   width: 376px;
   height: 52px;
+  margin: 12px 108px;
 }
 
 .footer-social-container {
  display: flex;
  width: 1200px;
  margin: 0 auto;
+ justify-content: space-between;
+ gap: 20px;
 }
 
 .footer-social {
  width: 142px;
- padding-left: 70px;
+
 }
 
 .contact-phone {
@@ -260,7 +280,8 @@ html {
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  justify-content: center;
+  align-items: center;
+  display: grid;
 }
 .page-footer-title {
   font-family: "PT Sans", sans-serif;
