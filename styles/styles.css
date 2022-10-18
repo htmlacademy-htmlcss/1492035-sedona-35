@@ -14,7 +14,7 @@
   font-display: swap;
 }
 
-*, *::before {
+*, *:before {
 box-sizing: border-box;
 }
 
@@ -29,8 +29,10 @@ body {
   flex-direction: column;
   min-height: 100%;
   width: 1200px;
-  box-shadow: 0, 0, 15px, rgb;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
 }
+
 
 html {
   height: 100%;
@@ -40,7 +42,14 @@ html {
 .page-header {
   background-color: #FFFFFF;
   color: #000000;
+  position: relative;
 
+}
+
+.logo {
+ width: 140px;
+ margin-right: 28px;
+ position: absolute;
 }
 
 .navigation {
@@ -52,10 +61,18 @@ html {
 .navigation-list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
 }
 
 .navigation-user {
   margin-left: auto;
+  margin-right: 70px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
 }
 
 .navigation-link {
@@ -80,6 +97,18 @@ html {
   height: 20px;
 
 }
+ /*
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
 .navigation-button {
   font-size: 16px;
   line-height: 20px;
@@ -107,11 +136,14 @@ html {
 }
 
 .main-image {
-  background-image: url("../images/index_background.jpg"), url("../images/vector_main_page.svg");
+  background-image: url("../images/vector_main_page.svg"), url("..images/index_background.jpg");
+  background-position: center bottom, center;
   background-color: #81B3D3;
+  background-position-x: center;
+  background-position-y: bottom;
   background-repeat: no-repeat;
-  background-position: center,  bottom;
   height: 485px;
+  width: 1200px;
   text-align: center;
 }
 
@@ -149,21 +181,19 @@ html {
   padding: 0;
   text-align: center;
   color:#333333;
-  display: flex;
-  flex-wrap: wrap;
-
 }
 
 .advantages-item {
   width: 100%;
   display: flex;
-
 }
 
 .advantages-item-flex {
  display: flex;
  justify-content: flex-end;
+
 }
+
 
 .advantages-title-white {
   font-family: "PT Sans", sans-serif;
@@ -254,19 +284,22 @@ html {
  margin: 0 auto;
  justify-content: space-between;
  gap: 20px;
+ padding: 0 70px;
+
 }
 
 .footer-social {
- width: 142px;
-
+ max-width: 192px;
+ display: flex;
 }
 
 .contact-phone {
-  width: 720px;
+  width: 331px;
 }
 
 .footer-logo {
-
+  width: 115px;
+  height: 33px;
 }
 
 .page-footer {
