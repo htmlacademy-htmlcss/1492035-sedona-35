@@ -24,7 +24,7 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #FFFFFF;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -37,25 +37,27 @@ body {
 html {
   height: 100%;
   min-width: 1200px;
+  background: #F2F2F2;
 }
 
 .page-header {
   background-color: #FFFFFF;
   color: #000000;
   position: relative;
-
+  padding: 0 70px;
+  height: 64px;
 }
 
 .logo {
  width: 140px;
- margin-right: 28px;
  position: absolute;
 }
 
 .navigation {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
+  justify-content: space-between;
+  margin-left: 160px;
+
 }
 
 .navigation-list {
@@ -65,14 +67,20 @@ html {
   display: flex;
   justify-content: flex-start;
   align-content: space-between;
+  flex-wrap: wrap;
 }
 
 .navigation-user {
   margin-left: auto;
-  margin-right: 70px;
   display: flex;
   list-style-type: none;
   justify-content: space-between;
+
+}
+
+.navigation-user .navigation-link {
+  min-width: 44px;
+  min-height: 64px;
 }
 
 .navigation-link {
@@ -83,21 +91,26 @@ html {
   color:#000000;
   text-align: center;
   text-decoration: none;
+  padding: 20px 16px;
+  display: block;
 }
 .navigation-search {
   background-image: url("../images/header_icons/search.svg");
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
+  display: block;
+  margin: 22px 12px;
 }
 .navigation-like {
   background-image: url("../images/header_icons/vector_like.svg");
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
-
+  margin: 22px 12px;
+  display: block;
 }
- /*
+/*
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -109,20 +122,28 @@ html {
   overflow: hidden;
 }
 */
+
+
 .navigation-button {
   font-size: 16px;
   line-height: 20px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  text-align: center;
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
   background-color: #756157;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 34px;
   width: 160px;
   height: 36px;
+  margin-left: 20px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-right: 0;
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-container {
@@ -132,11 +153,10 @@ html {
 .page-container {
   width: 1200px;
   margin: 0 auto;
-
 }
 
 .main-image {
-  background-image: url("../images/vector_main_page.svg"), url("..images/index_background.jpg");
+  background-image: url("../images/vector_main_page.svg"), url("../images/index_background.jpg");
   background-position: center bottom, center;
   background-color: #81B3D3;
   background-position-x: center;
@@ -152,6 +172,17 @@ html {
   margin: 0 auto;
 }
 
+.advantages-container {
+  margin: 0;
+  padding: 0;
+  height: 282px;
+}
+
+.advantages {
+  margin: 0;
+  padding: 0;
+}
+
 .main-heading {
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
@@ -161,6 +192,8 @@ html {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 0;
+  margin: 69px 290px 0;
 }
 .main-text {
   font-family: "PT Sans", sans-serif;
@@ -171,9 +204,24 @@ html {
   color: #333333;
   text-decoration: none;
   text-transform: none;
+  padding: 0;
+  margin: 25px 275px 90px;
 }
-.advantages-blue {
+
+.advantages-item-blue {
   background-color: #82B3D3;
+  color:#FFFFFF;
+  width: 1200px;
+  height: 384px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.direction {
+  flex-direction: row-reverse;
 }
 
 .advantages-list {
@@ -181,19 +229,30 @@ html {
   padding: 0;
   text-align: center;
   color:#333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .advantages-item {
-  width: 100%;
+  width: 400px;
+  height: 384px;
+  text-align: center;
+  justify-content: center;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-flex {
+.item-blue {
+ border-color: #82B3D3;
+}
+
+.advantages-features {
  display: flex;
- justify-content: flex-end;
-
 }
-
 
 .advantages-title-white {
   font-family: "PT Sans", sans-serif;
@@ -272,7 +331,7 @@ html {
   text-transform: uppercase;
   background-color: #756157;
   border-radius: 4px;
-  padding: 8px, 50px, 8px, 50px;
+  padding: 8px 50px 8px 50px;
   width: 376px;
   height: 52px;
   margin: 12px 108px;
@@ -280,12 +339,10 @@ html {
 
 .footer-social-container {
  display: flex;
- width: 1200px;
- margin: 0 auto;
  justify-content: space-between;
  gap: 20px;
  padding: 0 70px;
-
+ align-items: center;
 }
 
 .footer-social {
