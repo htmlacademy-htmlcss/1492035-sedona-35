@@ -45,7 +45,6 @@ html {
   color: #000000;
   position: relative;
   padding: 0 70px;
-  height: 64px;
 }
 
 .logo {
@@ -148,6 +147,7 @@ html {
 
 .main-container {
   flex-grow: 1;
+  margin: 0;
 }
 
 .page-container {
@@ -179,7 +179,7 @@ html {
 }
 
 .advantages {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -205,7 +205,7 @@ html {
   text-decoration: none;
   text-transform: none;
   padding: 0;
-  margin: 25px 275px 90px;
+  margin: 25px 275px 90px 274px;
 }
 
 .advantages-item-blue {
@@ -346,7 +346,6 @@ html {
 }
 
 .footer-social {
- max-width: 192px;
  display: flex;
 }
 
