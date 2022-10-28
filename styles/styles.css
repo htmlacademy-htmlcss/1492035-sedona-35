@@ -677,13 +677,13 @@ gap: 20px;
   text-decoration: none;
 }
 
-.paginatation {
+.pagination {
  padding: 40px 70px 60px;
  display: flex;
  gap: 8px;
 }
 
-.paginatation a {
+.pagination a {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
@@ -696,7 +696,15 @@ gap: 20px;
   width: 60px;
   height: 60px;
   display: block;
+}
 
+.ellipsis {
+  width: 60px;
+  height: 60px;
+  display: block;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: center;
 }
 .breadcrumbs-link {
   width: 73px;
