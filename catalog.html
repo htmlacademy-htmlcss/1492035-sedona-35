@@ -32,12 +32,13 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-like" href="#">
+              <span class="count-badge">12</span>
               <span class="visually-hidden">нравится</span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-button" href="#">
-              <span class="visually-hidden">Хочу сюда!</span>
+              <span class="button">Хочу сюда!</span>
             </a>
           </li>
         </ul>
@@ -61,6 +62,7 @@
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter-filter" action="https://echo/htmlacademy.ru/" method="post">
 
+        <div class="catalog-filter-container">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
@@ -108,28 +110,39 @@
               </li>
             </ul>
           </fieldset>
+        </div>
           <button class="button" type="submit">Применить</button>
           <button class="button" type="reset">Сбросить</button>
         </form>
        </div>
+       <div class="catalog-filter-search-container">
         <h3 class="catalog-filter-search">Найдено гостиниц: 38</h3>
-
+        <div class="sorting-container">
         <select class="select-control" aria-label="Сортировка">
           <option value="chear">Сначала дешевые</option>
           <option value="expensive">Сначала дорогое</option>
           <option value="popular">Сначала популярное</option>
         </select>
-        <a class="button button-light" href="#">
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-button-list">
+        <a class="button-list button-light" href="#">
           <span class="visually-hidden">Показать список</span>
         </a>
-        <a class="button button-light" href="#">
+          </div>
+          <div class="dropdown-button-cards">
+        <a class="button-cards button-light" href="#">
           <span class="visually-hidden">Показать карточки</span>
         </a>
-        <a class="button button-light" href="#">
+          </div>
+          <div class="dropdown-button-slide-show">
+        <a class="button-slide-show button-light" href="#">
           <span class="visually-hidden">Показать слайд-шоу</span>
         </a>
-
-        <div class="catalog-list">
+          </div>
+        </div>
+       </div>
+        <div class="catalog-list-container">
           <ol class="catalog-list">
             <li class="catalog-list-item">
               <a class="catalog-list-link" href="#">
@@ -191,27 +204,38 @@
                 <span class="catalog-property-rating">Рейтинг: 5,0</span>
               </div>
             </li>
-
           </ol>
         </div>
       </section>
-      <div class="paginatation">
-        <a href="#" class="disabled">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <span>...</span>
-        <a href="#">10</a>
-      </div>
+      <ul class="pagination">
+        <li class="disabled-list">
+        <a class="disabled" href="#">1</a>
+        </li>
+        <li class="pagination-list">
+        <a class="pagination-item" href="#">2</a>
+        </li>
+        <li class="pagination-list">
+        <a class="pagination-item" href="#">3</a>
+        </li>
+        <li class="pagination-list">
+        <a class="pagination-item" href="#">4</a>
+        </li>
+        <li class="pagination-list">
+        <span class="ellipsis">...</span>
+        </li>
+        <li class="pagination-list">
+        <a class="pagination-item" href="#">10</a>
+        </li>
+      </ul>
     </main>
 
     <footer class="footer">
-      <section class="page-footer">
+      <section class="page-footer-catalog">
         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
         <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Email</label>
-          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
+          <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
+          <input class="input-field newsletter-input" placeholder="Ваш e-mail" type="email" name="newsletter-email"
             id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">
             <span class="newsletter-button">Подписаться</span>
@@ -220,20 +244,20 @@
       </section>
       <div class="footer-social-container">
       <section class="footer-social">
-        <h2 class="visually-hidden">Наши социальные сети</h2>
+        <h2 class="visually-hidden" hidden>Наши социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy" target="_blank">
+            <a class="button-vkontakte" href="https://vk.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy " target="_blank">
+            <a class="button-telegram" href="https://t.me/htmlacademy " target="_blank">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <a class="button-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
