@@ -33,6 +33,7 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-like" href="#">
+              <span class="count-badge">12</span>
               <span class="visually-hidden">нравится</span>
             </a>
           </li>
@@ -207,14 +208,26 @@
           </ol>
         </div>
       </section>
-      <div class="paginatation">
-        <a href="#" class="disabled">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <span>...</span>
-        <a href="#">10</a>
-      </div>
+      <ul class="pagination">
+        <li class="disabled-list">
+        <a class="disabled" href="#">1</a>
+        </li>
+        <li class="pagination-list">
+        <a class="pagination-item" href="#">2</a>
+        </li>
+        <li class="pagination-list">
+        <a class="pagination-item" href="#">3</a>
+        </li>
+        <li class="pagination-list">
+        <a class="pagination-item" href="#">4</a>
+        </li>
+        <li class="pagination-list">
+        <span class="ellipsis">...</span>
+        </li>
+        <li class="pagination-list">
+        <a class="pagination-item" href="#">10</a>
+        </li>
+      </ul>
     </main>
 
     <footer class="footer">
@@ -222,8 +235,8 @@
         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
         <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Email</label>
-          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
+          <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
+          <input class="input-field newsletter-input" placeholder="Ваш e-mail" type="email" name="newsletter-email"
             id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">
             <span class="newsletter-button">Подписаться</span>
