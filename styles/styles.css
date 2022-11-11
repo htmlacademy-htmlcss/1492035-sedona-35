@@ -501,7 +501,7 @@ html {
 }
 
 .button-apply:disabled {
-
+  background-color: #E5E5E5;
 }
 
 .footer-social-container {
@@ -1205,7 +1205,7 @@ gap: 20px;
  align-items: flex-start;
  padding: 40px 0 60px;
  border-top: 1px solid #E6E6E6;
- margin: 40px 70px;
+ margin: 40px 70px 0;
 }
 
 .pagination-link {

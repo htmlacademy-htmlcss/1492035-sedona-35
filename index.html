@@ -47,10 +47,11 @@
 
     <main class="main-container">
       <div class="page-container">
-      <div class="main-image">
-      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      <img class="main-logo" src="images/welcome.svg" alt="На картинке написано добро пожаловать в Седону" width="458" height="352">
-      </div>
+       <div class="main-image">
+        <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+         <img class="main-logo" src="images/welcome.svg" alt="На картинке написано добро пожаловать в Седону" width="458" height="352">
+       </div>
+
       <section class="advantages">
         <div class="advantages-container">
           <h2 class="main-heading">Седона — небольшой городок в Аризоне,<br>
@@ -91,6 +92,7 @@
         </li>
       </ul>
       </section>
+
       <section class="advantages-features">
         <h2 class="visually-hidden" hidden>Дополнительные преимущества</h2>
         <ul class="advantages-list">
@@ -123,7 +125,7 @@
       <section class="page-footer">
         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
         <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="POST">
           <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
           <input class="input-field newsletter-input" placeholder="Ваш e-mail" type="email" name="newsletter-email"
             id="newsletter-email" required>
@@ -164,36 +166,39 @@
       </a>
        </div>
     </footer>
-    <div class="close-modal modal-container">
-      <div class="modal modal-auth reset-styles">
-        <button class="modal-close-button reset-styles">
+
+
+
+    <div class="modal-window popup">
+      <div class="modal window-authorization">
+        <button class="window-close-button">
           <span class="visually-hidden">Закрыть окно</span>
         </button>
-        <section class="modal-content">
-          <h2 class="modal-title reset-styles">Поиск гостиницы в Седоне</h2>
-          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="POST">
-            <div class="style-form">
+        <section class="modal-window-content">
+          <h2 class="modal-window-title">Поиск гостиницы в Седоне</h2>
+          <form class="authorization-form" action="https://echo.htmlacademy.ru/" method="POST">
+            <div class="form-container">
               <label class="input-title" for="check-in"> Дата заезда:</label>
               <div>
-                <input class="data-check reset-styles" type="text" id="check-in" name="check-in-date" placeholder="27 апреля 2020" required>
-                <p class="text-warning reset-styles text-warning-red">Мы не можем отправить вас в прошлое</p>
+                <input class="data-check" type="text" id="check-in" name="check-in-date" placeholder="27 апреля 2020" required>
+                <p class="text-warning text-warning-red">Мы не можем отправить вас в прошлое</p>
               </div>
             </div>
-            <div class="style-form">
+            <div class="form-container">
               <label class="input-title" for="check-in">Дата выезда:</label>
               <div>
-                <input class="data-check reset-styles" type="text" id="check-out" name="check-out-date" placeholder="1 сентября 2023" required>
-                <p class="text-warning reset-styles text-warning-black">На эти даты есть свободные номера.Пока есть.</p>
+                <input class="data-check" type="text" id="check-out" name="check-out-date" placeholder="1 сентября 2023" required>
+                <p class="text-warning text-warning-black">На эти даты есть свободные номера.Пока есть.</p>
               </div>
             </div>
-            <div class="child-adult">
-              <div class="adult-block">
+            <div class="child-adult-container">
+              <div class="adult-container">
                 <label class="input-title label-adult" for="adult">Взрослые:</label>
-                <button class="button-minus button-change reset-styles" type="button"></button>
-                <input class="lot-imput reset-styles" type="number" id="adult" name="adults-amount" placholder="2" min="1" max="99">
-                <button class="button-plus button-change reset-styles" type="button"></button>
+                <button class="button-minus button-change" type="button"></button>
+                <input class="lot-imput" type="number" id="adult" name="adults-number" placholder="2" min="1" max="99">
+                <button class="button-plus button-change" type="button"></button>
               </div>
-              <div class="childe-block">
+              <div class="childe-container">
                <div class="childe-inform">
                 <label class="input-titple-childe" for="child">Дети:</label>
                 <span class="tooltip">
@@ -201,9 +206,14 @@
                   <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
                </div>
-
+               <div class="container-submit-child">
+                <button class="button-minus button-change" type="button"></button>
+                <input class="lot-input"  type="number" id="child" name="child-amount" placeholder="2" min="1" max="99">
+                <button class="button-plus button-change" type="button"></button>
+               </div>
               </div>
             </div>
+            <button class="button-search-another button-blue" type="submit">Найти</button>
           </form>
         </section>
       </div>
