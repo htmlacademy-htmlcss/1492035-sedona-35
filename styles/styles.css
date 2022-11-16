@@ -302,7 +302,6 @@ html {
   padding: 80px 85px 81px;
   list-style-type: none;
   width: 400px;
-
 }
 
 .background {
@@ -1529,7 +1528,6 @@ input::-webkit-inner-spin-button {
   color: 333333;
 }
 
-
 .button-change {
   background-color: #F2F2F2;
   width: 40px;
@@ -1559,11 +1557,9 @@ input::-webkit-inner-spin-button {
   border-radius: 4px;
 }
 
-
 .button-minus:focus {
  outline: none;
 }
-
 
 .button-minus:active {
   color: rgba(117, 97, 87, 0.3);
@@ -1577,7 +1573,6 @@ input::-webkit-inner-spin-button {
 .button-plus {
   fill: black;
 }
-
 
 .button-plus:hover svg {
   fill: rgb(207, 5, 5);
