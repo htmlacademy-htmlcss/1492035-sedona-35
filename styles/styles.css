@@ -786,7 +786,7 @@ font-family: inherit;
  border-radius: 4px;
  font-size: 18px;
  line-height: 21px;
- background-image: url("../images/arrow-down.svg");
+ background-image: url("");
  background-repeat: no-repeat;
  background-color: #FFFFFF;
  background-position: calc(100% - 20px) center;
@@ -1672,7 +1672,7 @@ input::-webkit-inner-spin-button {
 
 .tooltip-text:after {
   content: '';
-  background-image: url(../images/popup/tooltip-arrow.svg);
+  background-image: url();
   background-repeat: no-repeat;
   width: 20px;
   height: 10px;
