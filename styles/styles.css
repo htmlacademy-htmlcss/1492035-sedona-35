@@ -581,10 +581,6 @@ color: #000000;
   outline: none;
 }
 
-.logo-academy {
-  padding-top: 3px;
-}
-
 .logo-academy:hover {
   fill: #756157;
   outline: none;
