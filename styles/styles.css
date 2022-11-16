@@ -155,7 +155,8 @@ html {
   margin-right: 0;
   padding: 8px 34px;
   line-height: 20px;
-  font-size: 16px
+  font-size: 16px;
+  width: 160px;
 }
 
 .navigation-button:hover {
@@ -351,7 +352,6 @@ html {
 
 .home::before {
   content: url("../images/advantages_icons/home.svg");
-
 }
 
 
@@ -361,7 +361,6 @@ html {
 
 .souvenir::before {
   content: url("../images/advantages_icons/souvenir.svg");
-
 }
 
 
@@ -786,14 +785,14 @@ font-family: inherit;
  border-radius: 4px;
  font-size: 18px;
  line-height: 21px;
- background-image: url("../images/arrow-down.svg");
+ background-image: url("../images/arrow_down.svg");
  background-repeat: no-repeat;
  background-color: #FFFFFF;
  background-position: calc(100% - 20px) center;
  -webkit-appearance: none;
  -moz-appearance: none;
  appearance: none;
- padding: 14px 20px;
+ padding: 10px 20px;
  margin-left: auto;
  margin-right: 70px;
 }
@@ -1672,7 +1671,7 @@ input::-webkit-inner-spin-button {
 
 .tooltip-text:after {
   content: '';
-  background-image: url(../images/popup/tooltip-arrow.svg);
+  background-image: url("../images/popup/tooltip_arrow.svg");
   background-repeat: no-repeat;
   width: 20px;
   height: 10px;
@@ -1715,15 +1714,3 @@ input::-webkit-inner-spin-button {
   background-color: #68A2CA;
   outline: none;
 }
-
-
-
-
-
-#popup:target {
-  display: flex;
-}
-
-#popup:not(:target):not([open]) {
-  display: none;
- }
