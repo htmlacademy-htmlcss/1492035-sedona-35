@@ -351,7 +351,6 @@ html {
 
 .home::before {
   content: url("../images/advantages_icons/home.svg");
-
 }
 
 
@@ -361,7 +360,6 @@ html {
 
 .souvenir::before {
   content: url("../images/advantages_icons/souvenir.svg");
-
 }
 
 
@@ -786,7 +784,7 @@ font-family: inherit;
  border-radius: 4px;
  font-size: 18px;
  line-height: 21px;
- background-image: url("");
+ background-image: url("../images/arrow_down.svg");
  background-repeat: no-repeat;
  background-color: #FFFFFF;
  background-position: calc(100% - 20px) center;
@@ -1672,7 +1670,7 @@ input::-webkit-inner-spin-button {
 
 .tooltip-text:after {
   content: '';
-  background-image: url();
+  background-image: url("../images/popup/tooltip_arrow.svg");
   background-repeat: no-repeat;
   width: 20px;
   height: 10px;
