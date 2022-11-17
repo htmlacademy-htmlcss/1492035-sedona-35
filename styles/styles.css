@@ -100,25 +100,19 @@ html {
 }
 
 .navigation-search {
-  background-image: url("../images/header_icons/search.svg");
-  background-repeat: no-repeat;
+  display: block;
   width: 44px;
   height: 64px;
-  display: block;
   padding: 22px 12px;
-  background-position: center center;
   margin: 0;
 }
 .navigation-like {
-  background-image: url("../images/header_icons/vector_like.svg");
-  background-repeat: no-repeat;
-  width: 44px;
-  height: 64px;
   padding: 22px 12px;
   display: block;
+  width: 44px;
+  height: 64px;
   position: relative;
   margin: 0;
-  background-position: center center;
 }
 
 .count-badge {
@@ -131,8 +125,8 @@ html {
   color: #FFFFFF;
   padding: 3px 5px;
   letter-spacing: -0.1em;
-  margin-top: -11px;
-  margin-left: 11px;
+  margin-top: -9px;
+  margin-left: -10px;
 }
 
 .visually-hidden {
@@ -555,6 +549,40 @@ flex-wrap: wrap;
   fill: currentColor;
 }
 
+.navigation-search:hover {
+  opacity: 0.3
+}
+
+.navigation-search:focus {
+  border: 2px solid #68A2CA;
+  outline: none;
+}
+
+.navigation-search:active {
+  color: #756157;
+  outline: none;
+}
+
+.navigation-like:hover {
+  opacity: 0.3;
+}
+
+.navigation-like:focus {
+  border: 2px solid #68A2CA;
+  outline: none;
+}
+
+.navigation-like:active {
+  color: #756157;
+  outline: none;
+}
+
+.header-icon {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
 .contact-phone {
 text-decoration: none;
 display: block;
@@ -595,6 +623,7 @@ color: #000000;
 }
 .page-footer {
   background-image: url("../images/footer_images.jpg");
+  background-color: #756157;
   background-repeat: no-repeat;
   width: 1200px;
   min-height: 415px;
@@ -731,6 +760,20 @@ color: #000000;
   padding: 0;
   width: 114px;
   justify-content: space-between;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link:focus {
+  color:#83B3D3;
+  outline: none;
+}
+
+.breadcrumbs-link:active {
+  color: #000000;
+  outline: none;
 }
 
 .catalog-filter {
@@ -1024,7 +1067,6 @@ font-family: inherit;
   opacity: 0.3;
 }
 
-
 .control-radio {
   padding-left: 36px;
 }
@@ -1137,6 +1179,7 @@ gap: 20px;
 .catalog-property-button:focus {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 .catalog-property-button-press {
   font-size: 16px;
